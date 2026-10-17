@@ -228,3 +228,28 @@ def test_upstream_failure_mid_stream_ends_with_error_line(
     assert response.status_code == 200
     assert response.text.startswith("Partial answer")
     assert "[error] Language model request failed. (request_id=r1)" in response.text
+
+
+def test_upload_rejects_password_protected_pdf(client: TestClient, sample_pdf: bytes) -> None:
+    import io
+
+    from pypdf import PdfReader, PdfWriter
+
+    writer = PdfWriter(clone_from=PdfReader(io.BytesIO(sample_pdf)))
+    writer.encrypt(user_password="secret", algorithm="AES-256")
+    buffer = io.BytesIO()
+    writer.write(buffer)
+    error = assert_error(upload(client, buffer.getvalue()), 422, "unprocessable_document")
+    assert "password-protected" in error["message"]
+
+
+def test_upload_reads_permission_only_encrypted_pdf(client: TestClient, sample_pdf: bytes):
+    import io
+
+    from pypdf import PdfReader, PdfWriter
+
+    writer = PdfWriter(clone_from=PdfReader(io.BytesIO(sample_pdf)))
+    writer.encrypt(user_password="", owner_password="owner", algorithm="AES-256")
+    buffer = io.BytesIO()
+    writer.write(buffer)
+    assert upload(client, buffer.getvalue()).status_code == 200

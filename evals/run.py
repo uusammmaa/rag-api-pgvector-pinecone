@@ -35,6 +35,7 @@ logger = logging.getLogger("evals")
 
 STRATEGIES = ("fixed", "recursive", "heading")
 K_VALUES = (3, 5)
+ERROR_PREFIX = "error: "
 DOC_TITLES = {
     "us_constitution": "US Constitution",
     "declaration_of_independence": "Declaration of Independence",
@@ -147,10 +148,17 @@ def answer_and_grade(
     context: list[RetrievedChunk],
     result: QuestionResult,
 ) -> None:
-    result.answer = complete(components.generator, example.question, context)
-    grade = components.judge.grade(
-        example.question, example.expected_answer, result.answer, context
-    )
+    """Answer and grade one question. A provider failure is recorded on the result
+    (scores stay None and are excluded from means) instead of aborting the run."""
+    try:
+        result.answer = complete(components.generator, example.question, context)
+        grade = components.judge.grade(
+            example.question, example.expected_answer, result.answer, context
+        )
+    except Exception as exc:
+        logger.warning("%s (%s, k=%d) failed: %s", example.id, result.strategy, result.k, exc)
+        result.judge_reasoning = f"{ERROR_PREFIX}{type(exc).__name__}: {exc}"
+        return
     result.faithfulness, result.relevance = grade.faithfulness, grade.relevance
     result.judge_reasoning = grade.reasoning
 
@@ -313,6 +321,15 @@ def render_report(
         f"Best retrieval: **{best.strategy}, k={best.k}** (recall@k {best.recall:.3f}, "
         f"MRR {best.mrr:.3f}).",
         "",
+    ]
+    failed = sum(r.judge_reasoning.startswith(ERROR_PREFIX) for r in results)
+    if failed:
+        lines += [
+            f"**{failed} of {len(results)} answers failed** (provider errors) and are excluded "
+            "from the faithfulness and relevance means; see `evals/results.json`.",
+            "",
+        ]
+    lines += [
         "## Recall@k by document",
         "",
         "| Strategy | k | " + " | ".join(DOC_TITLES.get(d, d) for d in docs) + " |",

@@ -1,5 +1,6 @@
 # Runtime dependencies (pinned). Dev and eval tooling lives in requirements-dev.txt.
 anthropic==0.102.0
+cryptography==48.0.0  # lets pypdf read AES-encrypted PDFs
 fastapi==0.136.1
 openai==2.37.0
 pinecone==9.0.0

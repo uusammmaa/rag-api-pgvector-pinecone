@@ -8,7 +8,7 @@ from bisect import bisect_right
 from dataclasses import dataclass
 
 from pypdf import PdfReader
-from pypdf.errors import PdfReadError
+from pypdf.errors import DependencyError, FileNotDecryptedError, PyPdfError
 
 from app.errors import UnprocessableDocumentError
 
@@ -21,6 +21,8 @@ NO_TEXT_MESSAGE = (
     "print-to-PDF saved as images. Upload a text-based PDF (one where you can select "
     "and copy text in a reader)."
 )
+
+ENCRYPTED_MESSAGE = "This PDF is password-protected. Remove the password and upload it again."
 
 
 @dataclass(frozen=True)
@@ -41,8 +43,13 @@ def extract_pdf(data: bytes) -> ExtractedDocument:
     """Extract text page by page, keeping page boundaries for citations."""
     try:
         reader = PdfReader(io.BytesIO(data))
+        # Permission-only encryption uses an empty user password and is readable.
+        if reader.is_encrypted and not reader.decrypt(""):
+            raise UnprocessableDocumentError(ENCRYPTED_MESSAGE)
         page_texts = [(page.extract_text() or "").strip() for page in reader.pages]
-    except (PdfReadError, ValueError, KeyError, TypeError) as exc:
+    except FileNotDecryptedError as exc:
+        raise UnprocessableDocumentError(ENCRYPTED_MESSAGE) from exc
+    except (PyPdfError, DependencyError, ValueError, KeyError, TypeError) as exc:
         logger.warning("pdf parse failed: %s", exc)
         raise UnprocessableDocumentError("The file could not be parsed as a PDF.") from exc
 

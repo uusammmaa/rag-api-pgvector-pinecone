@@ -63,7 +63,7 @@ async def _read_limited(file: UploadFile, max_bytes: int) -> bytes:
     while chunk := await file.read(READ_CHUNK):
         data.extend(chunk)
         if len(data) > max_bytes:
-            raise PayloadTooLargeError(f"File exceeds the {max_bytes // (1024 * 1024)} MB limit.")
+            raise PayloadTooLargeError(f"File exceeds the {max_bytes / (1024 * 1024):g} MB limit.")
     return bytes(data)
 
 

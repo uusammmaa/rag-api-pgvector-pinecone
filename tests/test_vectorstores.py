@@ -217,3 +217,23 @@ def test_pgvector_errors_become_upstream_errors() -> None:
 
 def test_to_pgvector_literal() -> None:
     assert to_pgvector([0.5, -1, 1e-9]) == "[0.5,-1,1e-09]"
+
+
+def test_pgvector_from_dsn_closes_pool_when_setup_fails(monkeypatch: pytest.MonkeyPatch) -> None:
+    import psycopg_pool
+
+    created: list[FakePool] = []
+
+    class ClosingFakePool(FakePool):
+        def __init__(self, *args: object, **kwargs: object) -> None:
+            super().__init__(fail=True)
+            self.closed = False
+            created.append(self)
+
+        def close(self) -> None:
+            self.closed = True
+
+    monkeypatch.setattr(psycopg_pool, "ConnectionPool", ClosingFakePool)
+    with pytest.raises(UpstreamError):
+        PgVectorStore.from_dsn("postgresql://unreachable/db", dim=4)
+    assert len(created) == 1 and created[0].closed

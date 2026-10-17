@@ -159,3 +159,25 @@ def test_cli_writes_report_and_enforces_threshold(tmp_path) -> None:
     assert "| Strategy | k |" in out.read_text()
     assert json.loads(js.read_text())["mode"] == "mock"
     assert main([*args, "--fail-under-recall", "1.01"]) == 1
+
+
+def test_provider_failure_is_recorded_not_fatal(tmp_path) -> None:
+    from evals.run import Components, render_report
+
+    class FailingJudge(LexicalJudge):
+        def grade(self, question, reference, answer, context):
+            if "Senator" in question:
+                raise RuntimeError("judge unavailable")
+            return super().grade(question, reference, answer, context)
+
+    base = build_components("mock", Settings(_env_file=None))
+    components = Components("mock", base.embedder, base.generator, FailingJudge())
+    examples = load_dataset(limit=4)
+    summaries, results = run(components, examples, ["recursive"], [3], 800, 100, 1)
+    failed = [r for r in results if r.judge_reasoning.startswith("error: ")]
+    assert failed and all(r.faithfulness is None for r in failed)
+    assert summaries[0].faithfulness is not None
+    report = render_report(
+        components, summaries, results, examples, 800, 100, Settings(_env_file=None)
+    )
+    assert f"{len(failed)} of {len(results)} answers failed" in report

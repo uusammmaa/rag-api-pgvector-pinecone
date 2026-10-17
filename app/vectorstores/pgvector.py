@@ -78,8 +78,20 @@ class PgVectorStore(VectorStore):
     def from_dsn(cls, dsn: str, dim: int, auto_migrate: bool = True) -> PgVectorStore:
         from psycopg_pool import ConnectionPool
 
-        pool = ConnectionPool(dsn, min_size=1, max_size=10, kwargs={"autocommit": True}, open=True)
-        return cls(pool, dim, auto_migrate)
+        try:
+            pool = ConnectionPool(
+                dsn, min_size=1, max_size=10, kwargs={"autocommit": True}, open=True
+            )
+        except Exception as exc:  # e.g. a malformed DATABASE_URL
+            logger.error("pgvector pool creation failed: %s", exc)
+            raise UpstreamError("Vector store connection failed.") from exc
+        try:
+            return cls(pool, dim, auto_migrate)
+        except Exception:
+            # Construction is retried on the next request; don't leak this pool's
+            # background connection threads.
+            pool.close()
+            raise
 
     def migrate(self) -> None:
         try:
