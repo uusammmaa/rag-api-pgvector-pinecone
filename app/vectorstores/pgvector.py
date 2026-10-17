@@ -28,15 +28,15 @@ TABLE = "rag_chunks"
 def schema_sql(dim: int) -> list[str]:
     return [
         "CREATE EXTENSION IF NOT EXISTS vector",
-        f"""CREATE TABLE IF NOT EXISTS {TABLE} (
-            id          text PRIMARY KEY,
-            doc_id      text NOT NULL,
-            chunk_index integer NOT NULL,
-            content     text NOT NULL,
-            metadata    jsonb NOT NULL DEFAULT '{{}}'::jsonb,
-            embedding   vector({int(dim)}) NOT NULL,
-            created_at  timestamptz NOT NULL DEFAULT now()
-        )""",
+        f"CREATE TABLE IF NOT EXISTS {TABLE} (\n"
+        "    id          text PRIMARY KEY,\n"
+        "    doc_id      text NOT NULL,\n"
+        "    chunk_index integer NOT NULL,\n"
+        "    content     text NOT NULL,\n"
+        "    metadata    jsonb NOT NULL DEFAULT '{}'::jsonb,\n"
+        f"    embedding   vector({int(dim)}) NOT NULL,\n"
+        "    created_at  timestamptz NOT NULL DEFAULT now()\n"
+        ")",
         f"CREATE INDEX IF NOT EXISTS {TABLE}_doc_id_idx ON {TABLE} (doc_id)",
     ]
 
