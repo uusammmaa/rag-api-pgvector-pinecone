@@ -179,10 +179,10 @@ _CAPS = re.compile(r"^[A-Z0-9][A-Z0-9 ,.;:'\-]{3,79}$")
 def detect_heading(line: str) -> tuple[int, str] | None:
     """Return (level, label) when ``line`` looks like a heading."""
     stripped = line.strip()
-    if not stripped or len(stripped) > 160:
+    if not stripped:
         return None
     is_caps = _CAPS.match(stripped) and sum(c.isalpha() for c in stripped) > 3
-    if _LEVEL1.match(stripped) or is_caps:
+    if len(stripped) <= 160 and (_LEVEL1.match(stripped) or is_caps):
         return 1, stripped
     match = _LEVEL2.match(stripped)
     if match:
