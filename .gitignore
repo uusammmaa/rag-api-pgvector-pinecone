@@ -31,3 +31,6 @@ htmlcov/
 *.swp
 .DS_Store
 Thumbs.db
+
+# Eval caches
+evals/.cache/

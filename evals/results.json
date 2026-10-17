@@ -1,0 +1,4435 @@
+{
+  "mode": "mock",
+  "summaries": [
+    {
+      "strategy": "fixed",
+      "k": 3,
+      "chunks": 151,
+      "avg_chars": 792.523178807947,
+      "precision": 0.23684210526315788,
+      "recall": 0.6710526315789473,
+      "mrr": 0.5614035087719298,
+      "faithfulness": 5.0,
+      "relevance": 2.2413157894736844,
+      "per_doc_recall": {
+        "declaration_of_independence": 0.8571428571428571,
+        "elements_of_style": 0.6666666666666666,
+        "us_constitution": 0.59375
+      }
+    },
+    {
+      "strategy": "fixed",
+      "k": 5,
+      "chunks": 151,
+      "avg_chars": 792.523178807947,
+      "precision": 0.1631578947368421,
+      "recall": 0.7587719298245613,
+      "mrr": 0.5850877192982457,
+      "faithfulness": 5.0,
+      "relevance": 2.305263157894737,
+      "per_doc_recall": {
+        "declaration_of_independence": 0.8571428571428571,
+        "elements_of_style": 0.8,
+        "us_constitution": 0.6770833333333334
+      }
+    },
+    {
+      "strategy": "recursive",
+      "k": 3,
+      "chunks": 148,
+      "avg_chars": 751.1554054054054,
+      "precision": 0.23684210526315788,
+      "recall": 0.6271929824561403,
+      "mrr": 0.543859649122807,
+      "faithfulness": 5.0,
+      "relevance": 2.2647368421052634,
+      "per_doc_recall": {
+        "declaration_of_independence": 0.8571428571428571,
+        "elements_of_style": 0.5,
+        "us_constitution": 0.6458333333333334
+      }
+    },
+    {
+      "strategy": "recursive",
+      "k": 5,
+      "chunks": 148,
+      "avg_chars": 751.1554054054054,
+      "precision": 0.17894736842105266,
+      "recall": 0.7982456140350876,
+      "mrr": 0.5767543859649124,
+      "faithfulness": 5.0,
+      "relevance": 2.4126315789473685,
+      "per_doc_recall": {
+        "declaration_of_independence": 0.8571428571428571,
+        "elements_of_style": 0.7,
+        "us_constitution": 0.8645833333333334
+      }
+    },
+    {
+      "strategy": "heading",
+      "k": 3,
+      "chunks": 168,
+      "avg_chars": 655.0,
+      "precision": 0.19298245614035087,
+      "recall": 0.5614035087719298,
+      "mrr": 0.4956140350877193,
+      "faithfulness": 5.0,
+      "relevance": 2.2957894736842106,
+      "per_doc_recall": {
+        "declaration_of_independence": 0.8571428571428571,
+        "elements_of_style": 0.5333333333333333,
+        "us_constitution": 0.4583333333333333
+      }
+    },
+    {
+      "strategy": "heading",
+      "k": 5,
+      "chunks": 168,
+      "avg_chars": 655.0,
+      "precision": 0.1473684210526316,
+      "recall": 0.7192982456140351,
+      "mrr": 0.531140350877193,
+      "faithfulness": 5.0,
+      "relevance": 2.4844736842105264,
+      "per_doc_recall": {
+        "declaration_of_independence": 0.8571428571428571,
+        "elements_of_style": 0.8,
+        "us_constitution": 0.5833333333333334
+      }
+    }
+  ],
+  "results": [
+    {
+      "id": "con-01",
+      "doc": "us_constitution",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        9,
+        11,
+        21
+      ],
+      "answer": "All Bills for raising Revenue shall originate in the House of Representatives; Every Bill which shall have passed the House of Representatives and the Senate, shall, before it become a Law,",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-02",
+      "doc": "us_constitution",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        3,
+        1,
+        31
+      ],
+      "answer": "The Senate of the United States shall be composed of two Senators from each State, chosen by the electors in each State shall have the qualifications requisite for electors of",
+      "faithfulness": 5.0,
+      "relevance": 2.45,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-03",
+      "doc": "us_constitution",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        19,
+        26,
+        20
+      ],
+      "answer": "Senator or Representative, or Person holding an Office of Trust Senator or Representative, or Person holding an Office of Trust or Profit under the United States, shall be",
+      "faithfulness": 5.0,
+      "relevance": 2.33,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-04",
+      "doc": "us_constitution",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        7,
+        15,
+        22
+      ],
+      "answer": "question shall, at the Desire of one fifth of those Present, be entered on the Journal. admit, shall not be prohibited by the Congress prior to the Year one thousand eight hundred and eight, but a Tax",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-05",
+      "doc": "us_constitution",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        3,
+        21,
+        23
+      ],
+      "answer": "and each Senator shall have one Vote. The Person having the greatest Number of Votes shall be the President, if such Number be a Majority",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-06",
+      "doc": "us_constitution",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        9,
+        28,
+        22
+      ],
+      "answer": "All Bills for raising Revenue shall originate in the House of Representatives; propose or concur with Amendments as on other Bills.",
+      "faithfulness": 5.0,
+      "relevance": 3.86,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-07",
+      "doc": "us_constitution",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "retrieved": [
+        10,
+        8,
+        11
+      ],
+      "answer": "within ten Days (Sundays excepted) after it shall have within ten Days (Sundays excepted) after it shall have been presented to him, the Same shall be a Law, in like",
+      "faithfulness": 5.0,
+      "relevance": 1.4,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-08",
+      "doc": "us_constitution",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        30,
+        32,
+        22
+      ],
+      "answer": "be at such Place or Places as the Congress may by Law have directed. The Congress shall have power to declare the punishment of Treason, but no Attainder of Treason shall work",
+      "faithfulness": 5.0,
+      "relevance": 1.31,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-09",
+      "doc": "us_constitution",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "retrieved": [
+        30,
+        19,
+        13
+      ],
+      "answer": "The Congress shall have power to declare the punishment of Treason, but no Attainder of Treason shall work of Peace, enter into any Agreement or Compact with another State, or with a foreign Power, or engage in War,",
+      "faithfulness": 5.0,
+      "relevance": 5.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-10",
+      "doc": "us_constitution",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        16,
+        35,
+        5
+      ],
+      "answer": "The Privilege of the Writ of Habeas Corpus shall not be suspended, unless when in Cases of Rebellion or against the United States under this Constitution, as under the Confederation.",
+      "faithfulness": 5.0,
+      "relevance": 2.14,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-11",
+      "doc": "us_constitution",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        22,
+        5,
+        11
+      ],
+      "answer": "Case, after the Choice of the President, the Person having the greatest Number of Votes of the Electors shall be Constitution, shall be eligible to the Office of President;",
+      "faithfulness": 5.0,
+      "relevance": 1.31,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-12",
+      "doc": "us_constitution",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        24,
+        14,
+        13
+      ],
+      "answer": "The President shall be Commander in Chief of the Army and Navy of the United States, and of the To provide and maintain a Navy;",
+      "faithfulness": 5.0,
+      "relevance": 3.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-13",
+      "doc": "us_constitution",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        35,
+        28,
+        2
+      ],
+      "answer": "This Constitution, and the Laws of the United States which shall be made in Pursuance thereof; Laws of the United States, and Treaties made, or which shall be made, under their Authority;--to all Cases",
+      "faithfulness": 5.0,
+      "relevance": 1.33,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-14",
+      "doc": "us_constitution",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        30,
+        6,
+        27
+      ],
+      "answer": "Treason against the United States, shall consist only in levying War against them, or in adhering to No Person shall be convicted of Treason unless on the Testimony",
+      "faithfulness": 5.0,
+      "relevance": 2.33,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-15",
+      "doc": "us_constitution",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 0.5,
+      "reciprocal_rank": 0.5,
+      "retrieved": [
+        22,
+        33,
+        35
+      ],
+      "answer": "Constitution, shall be eligible to the Office of President; and nothing in this Constitution shall be so construed",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-16",
+      "doc": "us_constitution",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "retrieved": [
+        35,
+        24,
+        36
+      ],
+      "answer": "against the United States under this Constitution, as under the Confederation. This Constitution, and the Laws of the United States which shall be made in Pursuance thereof;",
+      "faithfulness": 5.0,
+      "relevance": 3.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-01",
+      "doc": "declaration_of_independence",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        0,
+        1,
+        4
+      ],
+      "answer": "THE DECLARATION OF INDEPENDENCE OF THE UNITED STATES OF AMERICA with certain unalienable Rights, that among these are Life, Liberty, and the pursuit of Happiness.",
+      "faithfulness": 5.0,
+      "relevance": 5.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-02",
+      "doc": "declaration_of_independence",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        1,
+        0,
+        4
+      ],
+      "answer": "these rights, Governments are instituted among Men, deriving their just powers from the consent of the organizing its powers in such form, as to them shall seem most likely to effect their Safety and Happiness.",
+      "faithfulness": 5.0,
+      "relevance": 3.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-03",
+      "doc": "declaration_of_independence",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        1,
+        10,
+        0
+      ],
+      "answer": "governed, That whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it, and to institute new Government, laying its foundation on such principles and",
+      "faithfulness": 5.0,
+      "relevance": 5.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-04",
+      "doc": "declaration_of_independence",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        11,
+        3,
+        2
+      ],
+      "answer": "support of this Declaration, with a firm reliance on the Protection of Divine Providence, we mutually pledge to --Such has been the patient sufferance of these Colonies;",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-05",
+      "doc": "declaration_of_independence",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        6,
+        10,
+        4
+      ],
+      "answer": "For protecting them, by a mock Trial, from Punishment for any Murders which they should commit on the For depriving us, in many cases, of the benefits of Trial by Jury:",
+      "faithfulness": 5.0,
+      "relevance": 2.45,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-06",
+      "doc": "declaration_of_independence",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        11,
+        3,
+        0
+      ],
+      "answer": "establish Commerce, and to do all other Acts and Things which Independent States may of right do. each other our Lives, our Fortunes and our sacred Honor.",
+      "faithfulness": 5.0,
+      "relevance": 5.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-07",
+      "doc": "declaration_of_independence",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        11,
+        10,
+        0
+      ],
+      "answer": "that as Free and Independent States, they have full Power to levy War, conclude Peace, contract Alliances, ought to be Free and Independent States;",
+      "faithfulness": 5.0,
+      "relevance": 4.08,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-01",
+      "doc": "elements_of_style",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        6,
+        63,
+        29
+      ],
+      "answer": "But he should aim to write an orderly order, but to aim from the beginning at establishing general conclusions.",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-02",
+      "doc": "elements_of_style",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        4,
+        92,
+        80
+      ],
+      "answer": "Form the possessive singular of nouns by adding 's. Exceptions are the possessive of ancient proper names in -es and -is, the possessive Jesus', and such forms as",
+      "faithfulness": 5.0,
+      "relevance": 2.14,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-03",
+      "doc": "elements_of_style",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        4,
+        92,
+        80
+      ],
+      "answer": "Form the possessive singular of nouns by adding 's. Exceptions are the possessive of ancient proper names in -es and -is, the possessive Jesus', and such forms as",
+      "faithfulness": 5.0,
+      "relevance": 2.56,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-04",
+      "doc": "elements_of_style",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        14,
+        47,
+        61
+      ],
+      "answer": "by a comma, precedes the second independent clause, no comma is needed after the conjunction.",
+      "faithfulness": 5.0,
+      "relevance": 1.71,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-05",
+      "doc": "elements_of_style",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        14,
+        10,
+        8
+      ],
+      "answer": "Do not join independent clauses by a comma. If two or more clauses, grammatically complete and not joined by a conjunction, are to form a single compound",
+      "faithfulness": 5.0,
+      "relevance": 3.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-06",
+      "doc": "elements_of_style",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        19,
+        20,
+        37
+      ],
+      "answer": "On arriving in Chicago, his friends met him at the station. When he arrived (or, On his arrival) in Chicago, his friends met him",
+      "faithfulness": 5.0,
+      "relevance": 1.36,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-07",
+      "doc": "elements_of_style",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 0.5,
+      "retrieved": [
+        26,
+        25,
+        29
+      ],
+      "answer": "made in the topic sentence; As a rule, begin each paragraph with a topic sentence, end it in conformity with the beginning.",
+      "faithfulness": 5.0,
+      "relevance": 1.67,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-08",
+      "doc": "elements_of_style",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 0.5,
+      "retrieved": [
+        36,
+        33,
+        32
+      ],
+      "answer": "The habitual use of the active voice makes for forcible writing. lively and emphatic by substituting a verb in the active voice for some such perfunctory expression as there is, or",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-09",
+      "doc": "elements_of_style",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        37,
+        39,
+        53
+      ],
+      "answer": "Put statements in positive form. even a negative in positive form.",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-10",
+      "doc": "elements_of_style",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 0.5,
+      "retrieved": [
+        44,
+        45,
+        73
+      ],
+      "answer": "Omit needless words. Omit needless words.",
+      "faithfulness": 5.0,
+      "relevance": 1.27,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-11",
+      "doc": "elements_of_style",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        61,
+        12,
+        20
+      ],
+      "answer": "But whichever tense be used in the summary, a past tense in indirect discourse or in indirect question remains Apart from the exceptions noted, whichever tense the writer chooses, he should use throughout.",
+      "faithfulness": 5.0,
+      "relevance": 2.33,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-12",
+      "doc": "elements_of_style",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "retrieved": [
+        48,
+        25,
+        63
+      ],
+      "answer": "There were several less important courses, but these were the most The proper place in the sentence for the word, or group of words, which the writer desires to make most",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-13",
+      "doc": "elements_of_style",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        66,
+        87,
+        78
+      ],
+      "answer": "The principle that the proper place for what is to be made most prominent is the end applies equally to the words Do not spell out dates or other serial numbers.",
+      "faithfulness": 5.0,
+      "relevance": 3.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-14",
+      "doc": "elements_of_style",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        34,
+        80,
+        59
+      ],
+      "answer": "The need of making a particular word the subject of the sentence will often, as as verb, means to bring about, accomplish (not to be confused with affect, which",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-15",
+      "doc": "elements_of_style",
+      "strategy": "fixed",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        19,
+        25,
+        26
+      ],
+      "answer": "phrases come under the same rule if they begin the sentence. As a rule, begin each paragraph with a topic sentence, end it in conformity with the beginning.",
+      "faithfulness": 5.0,
+      "relevance": 2.14,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-01",
+      "doc": "us_constitution",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        9,
+        11,
+        21,
+        0,
+        20
+      ],
+      "answer": "All Bills for raising Revenue shall originate in the House of Representatives; Every Bill which shall have passed the House of Representatives and the Senate, shall, before it become a Law,",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-02",
+      "doc": "us_constitution",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        3,
+        1,
+        31,
+        19,
+        2
+      ],
+      "answer": "The Senate of the United States shall be composed of two Senators from each State, chosen by the electors in each State shall have the qualifications requisite for electors of",
+      "faithfulness": 5.0,
+      "relevance": 2.45,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-03",
+      "doc": "us_constitution",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 0.3333333333333333,
+      "reciprocal_rank": 0.25,
+      "retrieved": [
+        19,
+        26,
+        20,
+        4,
+        29
+      ],
+      "answer": "Senator or Representative, or Person holding an Office of Trust Senator or Representative, or Person holding an Office of Trust or Profit under the United States, shall be",
+      "faithfulness": 5.0,
+      "relevance": 2.33,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-04",
+      "doc": "us_constitution",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        7,
+        15,
+        22,
+        8,
+        19
+      ],
+      "answer": "question shall, at the Desire of one fifth of those Present, be entered on the Journal. admit, shall not be prohibited by the Congress prior to the Year one thousand eight hundred and eight, but a Tax",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-05",
+      "doc": "us_constitution",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        3,
+        21,
+        23,
+        20,
+        34
+      ],
+      "answer": "and each Senator shall have one Vote. The Person having the greatest Number of Votes shall be the President, if such Number be a Majority",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-06",
+      "doc": "us_constitution",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        9,
+        28,
+        22,
+        31,
+        0
+      ],
+      "answer": "All Bills for raising Revenue shall originate in the House of Representatives; propose or concur with Amendments as on other Bills.",
+      "faithfulness": 5.0,
+      "relevance": 3.86,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-07",
+      "doc": "us_constitution",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "retrieved": [
+        10,
+        8,
+        11,
+        23,
+        22
+      ],
+      "answer": "within ten Days (Sundays excepted) after it shall have within ten Days (Sundays excepted) after it shall have been presented to him, the Same shall be a Law, in like",
+      "faithfulness": 5.0,
+      "relevance": 1.4,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-08",
+      "doc": "us_constitution",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        30,
+        32,
+        22,
+        31,
+        14
+      ],
+      "answer": "be at such Place or Places as the Congress may by Law have directed. The Congress shall have power to declare the punishment of Treason, but no Attainder of Treason shall work",
+      "faithfulness": 5.0,
+      "relevance": 1.31,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-09",
+      "doc": "us_constitution",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "retrieved": [
+        30,
+        19,
+        13,
+        25,
+        26
+      ],
+      "answer": "The Congress shall have power to declare the punishment of Treason, but no Attainder of Treason shall work of Peace, enter into any Agreement or Compact with another State, or with a foreign Power, or engage in War,",
+      "faithfulness": 5.0,
+      "relevance": 5.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-10",
+      "doc": "us_constitution",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        16,
+        35,
+        5,
+        7,
+        20
+      ],
+      "answer": "The Privilege of the Writ of Habeas Corpus shall not be suspended, unless when in Cases of Rebellion or against the United States under this Constitution, as under the Confederation.",
+      "faithfulness": 5.0,
+      "relevance": 2.14,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-11",
+      "doc": "us_constitution",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        22,
+        5,
+        11,
+        23,
+        26
+      ],
+      "answer": "Case, after the Choice of the President, the Person having the greatest Number of Votes of the Electors shall be Constitution, shall be eligible to the Office of President;",
+      "faithfulness": 5.0,
+      "relevance": 1.31,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-12",
+      "doc": "us_constitution",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        24,
+        14,
+        13,
+        22,
+        16
+      ],
+      "answer": "The President shall be Commander in Chief of the Army and Navy of the United States, and of the To provide and maintain a Navy;",
+      "faithfulness": 5.0,
+      "relevance": 3.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-13",
+      "doc": "us_constitution",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 0.2,
+      "retrieved": [
+        35,
+        28,
+        2,
+        1,
+        25
+      ],
+      "answer": "This Constitution, and the Laws of the United States which shall be made in Pursuance thereof; Laws of the United States, and Treaties made, or which shall be made, under their Authority;--to all Cases",
+      "faithfulness": 5.0,
+      "relevance": 1.33,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-14",
+      "doc": "us_constitution",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        30,
+        6,
+        27,
+        8,
+        28
+      ],
+      "answer": "Treason against the United States, shall consist only in levying War against them, or in adhering to No Person shall be convicted of Treason unless on the Testimony",
+      "faithfulness": 5.0,
+      "relevance": 2.33,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-15",
+      "doc": "us_constitution",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 0.5,
+      "reciprocal_rank": 0.5,
+      "retrieved": [
+        22,
+        33,
+        35,
+        4,
+        36
+      ],
+      "answer": "Constitution, shall be eligible to the Office of President; and nothing in this Constitution shall be so construed",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-16",
+      "doc": "us_constitution",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "retrieved": [
+        35,
+        24,
+        36,
+        11,
+        15
+      ],
+      "answer": "against the United States under this Constitution, as under the Confederation. This Constitution, and the Laws of the United States which shall be made in Pursuance thereof;",
+      "faithfulness": 5.0,
+      "relevance": 3.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-01",
+      "doc": "declaration_of_independence",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.4,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        0,
+        1,
+        4,
+        10,
+        7
+      ],
+      "answer": "THE DECLARATION OF INDEPENDENCE OF THE UNITED STATES OF AMERICA with certain unalienable Rights, that among these are Life, Liberty, and the pursuit of Happiness.",
+      "faithfulness": 5.0,
+      "relevance": 5.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-02",
+      "doc": "declaration_of_independence",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        1,
+        0,
+        4,
+        11,
+        5
+      ],
+      "answer": "these rights, Governments are instituted among Men, deriving their just powers from the consent of the organizing its powers in such form, as to them shall seem most likely to effect their Safety and Happiness.",
+      "faithfulness": 5.0,
+      "relevance": 3.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-03",
+      "doc": "declaration_of_independence",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        1,
+        10,
+        0,
+        4,
+        9
+      ],
+      "answer": "governed, That whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it, and to institute new Government, laying its foundation on such principles and",
+      "faithfulness": 5.0,
+      "relevance": 5.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-04",
+      "doc": "declaration_of_independence",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        11,
+        3,
+        2,
+        10,
+        0
+      ],
+      "answer": "support of this Declaration, with a firm reliance on the Protection of Divine Providence, we mutually pledge to --Such has been the patient sufferance of these Colonies;",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-05",
+      "doc": "declaration_of_independence",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        6,
+        10,
+        4,
+        7,
+        8
+      ],
+      "answer": "For protecting them, by a mock Trial, from Punishment for any Murders which they should commit on the For depriving us, in many cases, of the benefits of Trial by Jury:",
+      "faithfulness": 5.0,
+      "relevance": 2.45,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-06",
+      "doc": "declaration_of_independence",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        11,
+        3,
+        0,
+        2,
+        4
+      ],
+      "answer": "establish Commerce, and to do all other Acts and Things which Independent States may of right do. each other our Lives, our Fortunes and our sacred Honor.",
+      "faithfulness": 5.0,
+      "relevance": 5.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-07",
+      "doc": "declaration_of_independence",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        11,
+        10,
+        0,
+        5,
+        6
+      ],
+      "answer": "that as Free and Independent States, they have full Power to levy War, conclude Peace, contract Alliances, ought to be Free and Independent States;",
+      "faithfulness": 5.0,
+      "relevance": 4.08,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-01",
+      "doc": "elements_of_style",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        6,
+        63,
+        29,
+        34,
+        56
+      ],
+      "answer": "But he should aim to write an orderly order, but to aim from the beginning at establishing general conclusions.",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-02",
+      "doc": "elements_of_style",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        4,
+        92,
+        80,
+        90,
+        73
+      ],
+      "answer": "Form the possessive singular of nouns by adding 's. Exceptions are the possessive of ancient proper names in -es and -is, the possessive Jesus', and such forms as",
+      "faithfulness": 5.0,
+      "relevance": 2.14,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-03",
+      "doc": "elements_of_style",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        4,
+        92,
+        80,
+        61,
+        7
+      ],
+      "answer": "Form the possessive singular of nouns by adding 's. Exceptions are the possessive of ancient proper names in -es and -is, the possessive Jesus', and such forms as",
+      "faithfulness": 5.0,
+      "relevance": 2.56,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-04",
+      "doc": "elements_of_style",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        14,
+        47,
+        61,
+        10,
+        13
+      ],
+      "answer": "by a comma, precedes the second Place a comma before a conjunction introducing a co-ordinate clause.",
+      "faithfulness": 5.0,
+      "relevance": 1.47,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-05",
+      "doc": "elements_of_style",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        14,
+        10,
+        8,
+        16,
+        11
+      ],
+      "answer": "Do not join independent clauses by a comma. If two or more clauses, grammatically complete and not joined by a conjunction, are to form a single compound",
+      "faithfulness": 5.0,
+      "relevance": 3.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-06",
+      "doc": "elements_of_style",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        19,
+        20,
+        37,
+        47,
+        16
+      ],
+      "answer": "On arriving in Chicago, his friends met him at the station. When he arrived (or, On his arrival) in Chicago, his friends met him",
+      "faithfulness": 5.0,
+      "relevance": 1.36,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-07",
+      "doc": "elements_of_style",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 0.5,
+      "retrieved": [
+        26,
+        25,
+        29,
+        27,
+        66
+      ],
+      "answer": "made in the topic sentence; As a rule, begin each paragraph with a topic sentence, end it in conformity with the beginning.",
+      "faithfulness": 5.0,
+      "relevance": 1.67,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-08",
+      "doc": "elements_of_style",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 0.5,
+      "retrieved": [
+        36,
+        33,
+        32,
+        100,
+        46
+      ],
+      "answer": "The habitual use of the active voice makes for forcible writing. lively and emphatic by substituting a verb in the active voice for some such perfunctory expression as there is, or",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-09",
+      "doc": "elements_of_style",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        37,
+        39,
+        53,
+        96,
+        52
+      ],
+      "answer": "Put statements in positive form. even a negative in positive form.",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-10",
+      "doc": "elements_of_style",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 0.5,
+      "retrieved": [
+        44,
+        45,
+        73,
+        48,
+        70
+      ],
+      "answer": "Omit needless words. Omit needless words.",
+      "faithfulness": 5.0,
+      "relevance": 1.27,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-11",
+      "doc": "elements_of_style",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 0.2,
+      "retrieved": [
+        61,
+        12,
+        20,
+        93,
+        60
+      ],
+      "answer": "But whichever tense be used in the summary, a past tense in indirect discourse or in indirect question remains In summarizing the action of a drama, the writer should always use the present tense.",
+      "faithfulness": 5.0,
+      "relevance": 5.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-12",
+      "doc": "elements_of_style",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "retrieved": [
+        48,
+        25,
+        63,
+        26,
+        35
+      ],
+      "answer": "There were several less important courses, but these were the most The proper place in the sentence for the word, or group of words, which the writer desires to make most",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-13",
+      "doc": "elements_of_style",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        66,
+        87,
+        78,
+        55,
+        40
+      ],
+      "answer": "The principle that the proper place for what is to be made most prominent is the end applies equally to the words Do not spell out dates or other serial numbers.",
+      "faithfulness": 5.0,
+      "relevance": 3.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-14",
+      "doc": "elements_of_style",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        34,
+        80,
+        59,
+        70,
+        50
+      ],
+      "answer": "The need of making a particular word the subject of the sentence will often, as as verb, means to bring about, accomplish (not to be confused with affect, which",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-15",
+      "doc": "elements_of_style",
+      "strategy": "fixed",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 0.25,
+      "retrieved": [
+        19,
+        25,
+        26,
+        84,
+        66
+      ],
+      "answer": "phrases come under the same rule if they begin the sentence. As a rule, begin each paragraph with a topic sentence, end it in conformity with the beginning.",
+      "faithfulness": 5.0,
+      "relevance": 2.14,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-01",
+      "doc": "us_constitution",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        9,
+        20,
+        10
+      ],
+      "answer": "All Bills for raising Revenue shall originate in the House of Representatives; Every Bill which shall have passed the House of Representatives and the Senate, shall, before it become a Law,",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-02",
+      "doc": "us_constitution",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        3,
+        2,
+        29
+      ],
+      "answer": "The Senate of the United States shall be composed of two Senators from each State, chosen by the The number of Representatives shall not exceed one for every thirty Thousand, but each State shall",
+      "faithfulness": 5.0,
+      "relevance": 2.82,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-03",
+      "doc": "us_constitution",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 0.3333333333333333,
+      "reciprocal_rank": 0.3333333333333333,
+      "retrieved": [
+        19,
+        25,
+        4
+      ],
+      "answer": "Senator or Representative, or Person holding an Office of Trust or Profit under the United States, shall be Government of the United States, directed to the President of the Senate.",
+      "faithfulness": 5.0,
+      "relevance": 3.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-04",
+      "doc": "us_constitution",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 0.5,
+      "reciprocal_rank": 0.3333333333333333,
+      "retrieved": [
+        7,
+        21,
+        5
+      ],
+      "answer": "question shall, at the Desire of one fifth of those Present, be entered on the Journal. Neither House, during the Session of Congress, shall, without the Consent of the other, adjourn for more than",
+      "faithfulness": 5.0,
+      "relevance": 1.5,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-05",
+      "doc": "us_constitution",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        3,
+        20,
+        19
+      ],
+      "answer": "and each Senator shall have one Vote. The Person having the greatest Number of Votes shall be the President, if such Number be a Majority",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-06",
+      "doc": "us_constitution",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        9,
+        27,
+        30
+      ],
+      "answer": "All Bills for raising Revenue shall originate in the House of Representatives; propose or concur with Amendments as on other Bills.",
+      "faithfulness": 5.0,
+      "relevance": 3.86,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-07",
+      "doc": "us_constitution",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        10,
+        8,
+        7
+      ],
+      "answer": "If any Bill shall not be returned by the President within ten Days (Sundays excepted) after it shall have been presented to him, the Same shall be a Law, in like",
+      "faithfulness": 5.0,
+      "relevance": 1.4,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-08",
+      "doc": "us_constitution",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        29,
+        31,
+        21
+      ],
+      "answer": "be at such Place or Places as the Congress may by Law have directed. The Congress shall have power to declare the punishment of Treason, but no Attainder of Treason shall work",
+      "faithfulness": 5.0,
+      "relevance": 1.31,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-09",
+      "doc": "us_constitution",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 0.5,
+      "retrieved": [
+        29,
+        13,
+        18
+      ],
+      "answer": "The Congress shall have power to declare the punishment of Treason, but no Attainder of Treason shall work To declare War, grant Letters of Marque and Reprisal, and make Rules concerning Captures on Land and",
+      "faithfulness": 5.0,
+      "relevance": 5.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-10",
+      "doc": "us_constitution",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        15,
+        7,
+        19
+      ],
+      "answer": "The Privilege of the Writ of Habeas Corpus shall not be suspended, unless when in Cases of Rebellion or and may be authorized to compel the Attendance of absent Members, in such Manner, and under such Penalties",
+      "faithfulness": 5.0,
+      "relevance": 2.14,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-11",
+      "doc": "us_constitution",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        21,
+        4,
+        10
+      ],
+      "answer": "Case, after the Choice of the President, the Person having the greatest Number of Votes of the Electors shall be Constitution, shall be eligible to the Office of President;",
+      "faithfulness": 5.0,
+      "relevance": 1.31,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-12",
+      "doc": "us_constitution",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        23,
+        13,
+        15
+      ],
+      "answer": "The President shall be Commander in Chief of the Army and Navy of the United States, and of the To provide and maintain a Navy;",
+      "faithfulness": 5.0,
+      "relevance": 3.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-13",
+      "doc": "us_constitution",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "retrieved": [
+        34,
+        27,
+        24
+      ],
+      "answer": "This Constitution, and the Laws of the United States which shall be made in Pursuance thereof; Laws of the United States, and Treaties made, or which shall be made, under their Authority;--to all Cases",
+      "faithfulness": 5.0,
+      "relevance": 1.33,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-14",
+      "doc": "us_constitution",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        29,
+        26,
+        12
+      ],
+      "answer": "Treason against the United States, shall consist only in levying War against them, or in adhering to No Person shall be convicted of Treason unless on the Testimony",
+      "faithfulness": 5.0,
+      "relevance": 2.33,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-15",
+      "doc": "us_constitution",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 0.5,
+      "reciprocal_rank": 0.3333333333333333,
+      "retrieved": [
+        21,
+        34,
+        32
+      ],
+      "answer": "Constitution, shall be eligible to the Office of President; against the United States under this Constitution, as under the Confederation.",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-16",
+      "doc": "us_constitution",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        34,
+        23,
+        11
+      ],
+      "answer": "against the United States under this Constitution, as under the Confederation. This Constitution, and the Laws of the United States which shall be made in Pursuance thereof;",
+      "faithfulness": 5.0,
+      "relevance": 3.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-01",
+      "doc": "declaration_of_independence",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        0,
+        1,
+        4
+      ],
+      "answer": "THE DECLARATION OF INDEPENDENCE OF THE UNITED STATES OF AMERICA with certain unalienable Rights, that among these are Life, Liberty, and the pursuit of Happiness.",
+      "faithfulness": 5.0,
+      "relevance": 5.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-02",
+      "doc": "declaration_of_independence",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        1,
+        0,
+        4
+      ],
+      "answer": "these rights, Governments are instituted among Men, deriving their just powers from the consent of the organizing its powers in such form, as to them shall seem most likely to effect their Safety and Happiness.",
+      "faithfulness": 5.0,
+      "relevance": 3.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-03",
+      "doc": "declaration_of_independence",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        1,
+        10,
+        0
+      ],
+      "answer": "governed, That whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it, and to institute new Government, laying its foundation on such principles and",
+      "faithfulness": 5.0,
+      "relevance": 5.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-04",
+      "doc": "declaration_of_independence",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        10,
+        3,
+        2
+      ],
+      "answer": "good People of these Colonies, solemnly publish and declare, That these United Colonies are, and of Right --Such has been the patient sufferance of these Colonies;",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-05",
+      "doc": "declaration_of_independence",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        6,
+        10,
+        4
+      ],
+      "answer": "For protecting them, by a mock Trial, from Punishment for any Murders which they should commit on the For depriving us, in many cases, of the benefits of Trial by Jury:",
+      "faithfulness": 5.0,
+      "relevance": 2.45,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-06",
+      "doc": "declaration_of_independence",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        11,
+        3,
+        0
+      ],
+      "answer": "establish Commerce, and to do all other Acts and Things which Independent States may of right do. each other our Lives, our Fortunes and our sacred Honor.",
+      "faithfulness": 5.0,
+      "relevance": 5.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-07",
+      "doc": "declaration_of_independence",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 0.5,
+      "retrieved": [
+        10,
+        11,
+        0
+      ],
+      "answer": "ought to be Free and Independent States; that as Free and Independent States, they have full Power to levy War, conclude Peace, contract Alliances,",
+      "faithfulness": 5.0,
+      "relevance": 4.08,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-01",
+      "doc": "elements_of_style",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        61,
+        29,
+        54
+      ],
+      "answer": "But he should aim to write an orderly order, but to aim from the beginning at establishing general conclusions.",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-02",
+      "doc": "elements_of_style",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "retrieved": [
+        78,
+        90,
+        3
+      ],
+      "answer": "carelessness.\" In correct use related as predicate or as modifier to a particular noun: Form the possessive singular of nouns by adding 's.",
+      "faithfulness": 5.0,
+      "relevance": 2.14,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-03",
+      "doc": "elements_of_style",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        3,
+        90,
+        54
+      ],
+      "answer": "Form the possessive singular of nouns by adding 's. clumsy substitute for something simpler, or in which the use of the possessive is awkward or impossible, should",
+      "faithfulness": 5.0,
+      "relevance": 1.22,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-04",
+      "doc": "elements_of_style",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        14,
+        15,
+        12
+      ],
+      "answer": "Do not join independent clauses by a comma. while (in the sense of and at the same time) likewise require a comma before the conjunction.",
+      "faithfulness": 5.0,
+      "relevance": 1.47,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-05",
+      "doc": "elements_of_style",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        14,
+        10,
+        8
+      ],
+      "answer": "Do not join independent clauses by a comma. If two or more clauses, grammatically complete and not joined by a conjunction, are to form a single compound",
+      "faithfulness": 5.0,
+      "relevance": 3.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-06",
+      "doc": "elements_of_style",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        19,
+        36,
+        18
+      ],
+      "answer": "On arriving in Chicago, his friends met him at the station. When he arrived (or, On his arrival) in Chicago, his friends met him",
+      "faithfulness": 5.0,
+      "relevance": 1.36,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-07",
+      "doc": "elements_of_style",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 0.5,
+      "retrieved": [
+        25,
+        24,
+        28
+      ],
+      "answer": "(c) the final sentence either emphasizes the thought of the topic sentence or states some important As a rule, begin each paragraph with a topic sentence, end it in conformity with the beginning.",
+      "faithfulness": 5.0,
+      "relevance": 1.67,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-08",
+      "doc": "elements_of_style",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 0.5,
+      "retrieved": [
+        35,
+        32,
+        45
+      ],
+      "answer": "The habitual use of the active voice makes for forcible writing. lively and emphatic by substituting a verb in the active voice for some such perfunctory expression as there is, or",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-09",
+      "doc": "elements_of_style",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        36,
+        38,
+        93
+      ],
+      "answer": "Put statements in positive form. even a negative in positive form.",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-10",
+      "doc": "elements_of_style",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 0.5,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        43,
+        46,
+        65
+      ],
+      "answer": "Omit needless words. A sentence should contain no unnecessary words, a paragraph no unnecessary",
+      "faithfulness": 5.0,
+      "relevance": 1.8,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-11",
+      "doc": "elements_of_style",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        19,
+        60,
+        59
+      ],
+      "answer": "one tense to the other gives the appearance of uncertainty and irresolution (compare Rule 15). But whichever tense be used in the summary, a past tense in indirect discourse or in indirect question remains",
+      "faithfulness": 5.0,
+      "relevance": 2.33,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-12",
+      "doc": "elements_of_style",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        61,
+        46,
+        64
+      ],
+      "answer": "Place the emphatic words of a sentence at the end. The proper place in the sentence for the word, or group of words, which the writer desires to make most",
+      "faithfulness": 5.0,
+      "relevance": 3.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-13",
+      "doc": "elements_of_style",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        76,
+        85,
+        58
+      ],
+      "answer": "To compare to is to point out or imply resemblances, between objects regarded as essentially of to compare with is mainly to point out differences, between objects regarded as essentially of the",
+      "faithfulness": 5.0,
+      "relevance": 1.4,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-14",
+      "doc": "elements_of_style",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        57,
+        78,
+        72
+      ],
+      "answer": "Modifiers should come, if possible, next to the word they modify. If several expressions modify the same word,",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-15",
+      "doc": "elements_of_style",
+      "strategy": "recursive",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        24,
+        18,
+        25
+      ],
+      "answer": "As a rule, begin each paragraph with a topic sentence, end it in conformity with the beginning. phrases come under the same rule if they begin the sentence.",
+      "faithfulness": 5.0,
+      "relevance": 2.14,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-01",
+      "doc": "us_constitution",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        9,
+        20,
+        10,
+        11,
+        0
+      ],
+      "answer": "All Bills for raising Revenue shall originate in the House of Representatives; Every Bill which shall have passed the House of Representatives and the Senate, shall, before it become a Law,",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-02",
+      "doc": "us_constitution",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        3,
+        2,
+        29,
+        6,
+        30
+      ],
+      "answer": "The Senate of the United States shall be composed of two Senators from each State, chosen by the The number of Representatives shall not exceed one for every thirty Thousand, but each State shall",
+      "faithfulness": 5.0,
+      "relevance": 2.82,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-03",
+      "doc": "us_constitution",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 0.3333333333333333,
+      "reciprocal_rank": 0.3333333333333333,
+      "retrieved": [
+        19,
+        25,
+        4,
+        31,
+        30
+      ],
+      "answer": "Senator or Representative, or Person holding an Office of Trust or Profit under the United States, shall be Government of the United States, directed to the President of the Senate.",
+      "faithfulness": 5.0,
+      "relevance": 3.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-04",
+      "doc": "us_constitution",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 0.5,
+      "reciprocal_rank": 0.3333333333333333,
+      "retrieved": [
+        7,
+        21,
+        5,
+        18,
+        2
+      ],
+      "answer": "question shall, at the Desire of one fifth of those Present, be entered on the Journal. Neither House, during the Session of Congress, shall, without the Consent of the other, adjourn for more than",
+      "faithfulness": 5.0,
+      "relevance": 1.5,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-05",
+      "doc": "us_constitution",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 0.2,
+      "retrieved": [
+        3,
+        20,
+        19,
+        22,
+        5
+      ],
+      "answer": "and each Senator shall have one Vote. When the President of the United States is tried, the Chief Justice shall preside:",
+      "faithfulness": 5.0,
+      "relevance": 1.89,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-06",
+      "doc": "us_constitution",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        9,
+        27,
+        30,
+        21,
+        0
+      ],
+      "answer": "All Bills for raising Revenue shall originate in the House of Representatives; propose or concur with Amendments as on other Bills.",
+      "faithfulness": 5.0,
+      "relevance": 3.86,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-07",
+      "doc": "us_constitution",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        10,
+        8,
+        7,
+        21,
+        22
+      ],
+      "answer": "If any Bill shall not be returned by the President within ten Days (Sundays excepted) after it shall have been presented to him, the Same shall be a Law, in like",
+      "faithfulness": 5.0,
+      "relevance": 1.4,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-08",
+      "doc": "us_constitution",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 0.2,
+      "retrieved": [
+        29,
+        31,
+        21,
+        13,
+        10
+      ],
+      "answer": "be at such Place or Places as the Congress may by Law have directed. The Congress shall have power to declare the punishment of Treason, but no Attainder of Treason shall work",
+      "faithfulness": 5.0,
+      "relevance": 1.31,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-09",
+      "doc": "us_constitution",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 0.5,
+      "retrieved": [
+        29,
+        13,
+        18,
+        24,
+        25
+      ],
+      "answer": "The Congress shall have power to declare the punishment of Treason, but no Attainder of Treason shall work To declare War, grant Letters of Marque and Reprisal, and make Rules concerning Captures on Land and",
+      "faithfulness": 5.0,
+      "relevance": 5.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-10",
+      "doc": "us_constitution",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        15,
+        7,
+        19,
+        34,
+        27
+      ],
+      "answer": "The Privilege of the Writ of Habeas Corpus shall not be suspended, unless when in Cases of Rebellion or and may be authorized to compel the Attendance of absent Members, in such Manner, and under such Penalties",
+      "faithfulness": 5.0,
+      "relevance": 2.14,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-11",
+      "doc": "us_constitution",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        21,
+        4,
+        10,
+        25,
+        20
+      ],
+      "answer": "Case, after the Choice of the President, the Person having the greatest Number of Votes of the Electors shall be Constitution, shall be eligible to the Office of President;",
+      "faithfulness": 5.0,
+      "relevance": 1.31,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-12",
+      "doc": "us_constitution",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        23,
+        13,
+        15,
+        21,
+        0
+      ],
+      "answer": "The President shall be Commander in Chief of the Army and Navy of the United States, and of the To provide and maintain a Navy;",
+      "faithfulness": 5.0,
+      "relevance": 3.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-13",
+      "doc": "us_constitution",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "retrieved": [
+        34,
+        27,
+        24,
+        1,
+        26
+      ],
+      "answer": "This Constitution, and the Laws of the United States which shall be made in Pursuance thereof; Laws of the United States, and Treaties made, or which shall be made, under their Authority;--to all Cases",
+      "faithfulness": 5.0,
+      "relevance": 1.33,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-14",
+      "doc": "us_constitution",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        29,
+        26,
+        12,
+        6,
+        27
+      ],
+      "answer": "Treason against the United States, shall consist only in levying War against them, or in adhering to No Person shall be convicted of Treason unless on the Testimony",
+      "faithfulness": 5.0,
+      "relevance": 2.33,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-15",
+      "doc": "us_constitution",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.4,
+      "recall": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "retrieved": [
+        21,
+        34,
+        32,
+        33,
+        3
+      ],
+      "answer": "Constitution, shall be eligible to the Office of President; against the United States under this Constitution, as under the Confederation.",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-16",
+      "doc": "us_constitution",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 0.2,
+      "retrieved": [
+        34,
+        23,
+        11,
+        14,
+        35
+      ],
+      "answer": "against the United States under this Constitution, as under the Confederation. This Constitution, and the Laws of the United States which shall be made in Pursuance thereof;",
+      "faithfulness": 5.0,
+      "relevance": 3.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-01",
+      "doc": "declaration_of_independence",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        0,
+        1,
+        4,
+        9,
+        7
+      ],
+      "answer": "THE DECLARATION OF INDEPENDENCE OF THE UNITED STATES OF AMERICA with certain unalienable Rights, that among these are Life, Liberty, and the pursuit of Happiness.",
+      "faithfulness": 5.0,
+      "relevance": 5.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-02",
+      "doc": "declaration_of_independence",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        1,
+        0,
+        4,
+        11,
+        9
+      ],
+      "answer": "these rights, Governments are instituted among Men, deriving their just powers from the consent of the organizing its powers in such form, as to them shall seem most likely to effect their Safety and Happiness.",
+      "faithfulness": 5.0,
+      "relevance": 3.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-03",
+      "doc": "declaration_of_independence",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        1,
+        10,
+        0,
+        4,
+        9
+      ],
+      "answer": "governed, That whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it, and to institute new Government, laying its foundation on such principles and",
+      "faithfulness": 5.0,
+      "relevance": 5.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-04",
+      "doc": "declaration_of_independence",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        10,
+        3,
+        2,
+        11,
+        0
+      ],
+      "answer": "good People of these Colonies, solemnly publish and declare, That these United Colonies are, and of Right --Such has been the patient sufferance of these Colonies;",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-05",
+      "doc": "declaration_of_independence",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        6,
+        10,
+        4,
+        7,
+        8
+      ],
+      "answer": "For protecting them, by a mock Trial, from Punishment for any Murders which they should commit on the For depriving us, in many cases, of the benefits of Trial by Jury:",
+      "faithfulness": 5.0,
+      "relevance": 2.45,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-06",
+      "doc": "declaration_of_independence",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        11,
+        3,
+        0,
+        2,
+        4
+      ],
+      "answer": "establish Commerce, and to do all other Acts and Things which Independent States may of right do. each other our Lives, our Fortunes and our sacred Honor.",
+      "faithfulness": 5.0,
+      "relevance": 5.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-07",
+      "doc": "declaration_of_independence",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 0.5,
+      "retrieved": [
+        10,
+        11,
+        0,
+        5,
+        6
+      ],
+      "answer": "ought to be Free and Independent States; that as Free and Independent States, they have full Power to levy War, conclude Peace, contract Alliances,",
+      "faithfulness": 5.0,
+      "relevance": 4.08,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-01",
+      "doc": "elements_of_style",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        61,
+        29,
+        54,
+        28,
+        72
+      ],
+      "answer": "But he should aim to write an orderly order, but to aim from the beginning at establishing general conclusions.",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-02",
+      "doc": "elements_of_style",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "retrieved": [
+        78,
+        90,
+        3,
+        87,
+        89
+      ],
+      "answer": "carelessness.\" In correct use related as predicate or as modifier to a particular noun: Form the possessive singular of nouns by adding 's.",
+      "faithfulness": 5.0,
+      "relevance": 2.14,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-03",
+      "doc": "elements_of_style",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        3,
+        90,
+        54,
+        78,
+        11
+      ],
+      "answer": "Form the possessive singular of nouns by adding 's. clumsy substitute for something simpler, or in which the use of the possessive is awkward or impossible, should",
+      "faithfulness": 5.0,
+      "relevance": 1.22,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-04",
+      "doc": "elements_of_style",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 0.2,
+      "retrieved": [
+        14,
+        15,
+        12,
+        9,
+        4
+      ],
+      "answer": "while (in the sense of and at the same time) likewise require a comma before the conjunction. In a series of three or more terms with a single conjunction, use a comma after each term except the last.",
+      "faithfulness": 5.0,
+      "relevance": 4.06,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-05",
+      "doc": "elements_of_style",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        14,
+        10,
+        8,
+        9,
+        18
+      ],
+      "answer": "Do not join independent clauses by a comma. If two or more clauses, grammatically complete and not joined by a conjunction, are to form a single compound",
+      "faithfulness": 5.0,
+      "relevance": 3.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-06",
+      "doc": "elements_of_style",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.4,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        19,
+        36,
+        18,
+        16,
+        71
+      ],
+      "answer": "On arriving in Chicago, his friends met him at the station. When he arrived (or, On his arrival) in Chicago, his friends met him",
+      "faithfulness": 5.0,
+      "relevance": 1.36,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-07",
+      "doc": "elements_of_style",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 0.5,
+      "retrieved": [
+        25,
+        24,
+        28,
+        26,
+        64
+      ],
+      "answer": "(c) the final sentence either emphasizes the thought of the topic sentence or states some important As a rule, begin each paragraph with a topic sentence, end it in conformity with the beginning.",
+      "faithfulness": 5.0,
+      "relevance": 1.67,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-08",
+      "doc": "elements_of_style",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 0.5,
+      "retrieved": [
+        35,
+        32,
+        45,
+        98,
+        31
+      ],
+      "answer": "The habitual use of the active voice makes for forcible writing. lively and emphatic by substituting a verb in the active voice for some such perfunctory expression as there is, or",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-09",
+      "doc": "elements_of_style",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        36,
+        38,
+        93,
+        51,
+        50
+      ],
+      "answer": "Put statements in positive form. even a negative in positive form.",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-10",
+      "doc": "elements_of_style",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 0.5,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        43,
+        46,
+        65,
+        68,
+        95
+      ],
+      "answer": "Omit needless words. Omit the words act, scene, line, book, volume, page, except when referring by",
+      "faithfulness": 5.0,
+      "relevance": 1.27,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-11",
+      "doc": "elements_of_style",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 0.2,
+      "retrieved": [
+        19,
+        60,
+        59,
+        12,
+        58
+      ],
+      "answer": "But whichever tense be used in the summary, a past tense in indirect discourse or in indirect question remains In summarizing the action of a drama, the writer should always use the present tense.",
+      "faithfulness": 5.0,
+      "relevance": 5.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-12",
+      "doc": "elements_of_style",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        61,
+        46,
+        64,
+        73,
+        24
+      ],
+      "answer": "Place the emphatic words of a sentence at the end. The proper place in the sentence for the word, or group of words, which the writer desires to make most",
+      "faithfulness": 5.0,
+      "relevance": 3.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-13",
+      "doc": "elements_of_style",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        76,
+        85,
+        58,
+        0,
+        39
+      ],
+      "answer": "To compare to is to point out or imply resemblances, between objects regarded as essentially of to compare with is mainly to point out differences, between objects regarded as essentially of the",
+      "faithfulness": 5.0,
+      "relevance": 1.4,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-14",
+      "doc": "elements_of_style",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        57,
+        78,
+        72,
+        58,
+        69
+      ],
+      "answer": "Modifiers should come, if possible, next to the word they modify. If several expressions modify the same word,",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-15",
+      "doc": "elements_of_style",
+      "strategy": "recursive",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 0.25,
+      "retrieved": [
+        24,
+        18,
+        25,
+        82,
+        35
+      ],
+      "answer": "As a rule, begin each paragraph with a topic sentence, end it in conformity with the beginning. phrases come under the same rule if they begin the sentence.",
+      "faithfulness": 5.0,
+      "relevance": 2.14,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-01",
+      "doc": "us_constitution",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        13,
+        15,
+        14
+      ],
+      "answer": "All Bills for raising Revenue shall originate in the House of Representatives; Every Bill which shall have passed the House of Representatives and the Senate, shall, before it become a Law,",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-02",
+      "doc": "us_constitution",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        5,
+        8,
+        3
+      ],
+      "answer": "The Senate of the United States shall be composed of two Senators from each State, chosen by the prescribed in each State by the Legislature thereof;",
+      "faithfulness": 5.0,
+      "relevance": 2.45,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-03",
+      "doc": "us_constitution",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 0.3333333333333333,
+      "reciprocal_rank": 0.3333333333333333,
+      "retrieved": [
+        31,
+        25,
+        6
+      ],
+      "answer": "proper, in the President alone, in the Courts of Law, or in the Heads of Departments. Senator or Representative, or Person holding an Office of Trust or Profit under the United States, shall be",
+      "faithfulness": 5.0,
+      "relevance": 3.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-04",
+      "doc": "us_constitution",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        42,
+        28,
+        7
+      ],
+      "answer": "The Congress, whenever two thirds of both Houses shall deem it necessary, shall propose Amendments to this fourths thereof, as the one or the other Mode of Ratification may be proposed by the Congress;",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-05",
+      "doc": "us_constitution",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        5,
+        26,
+        42
+      ],
+      "answer": "and each Senator shall have one Vote. Government of the United States, directed to the President of the Senate.",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-06",
+      "doc": "us_constitution",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        13,
+        35,
+        39
+      ],
+      "answer": "All Bills for raising Revenue shall originate in the House of Representatives; propose or concur with Amendments as on other Bills.",
+      "faithfulness": 5.0,
+      "relevance": 3.86,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-07",
+      "doc": "us_constitution",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        14,
+        10,
+        33
+      ],
+      "answer": "If any Bill shall not be returned by the President within ten Days (Sundays excepted) after it shall have been presented to him, the Same shall be a Law, in like",
+      "faithfulness": 5.0,
+      "relevance": 1.4,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-08",
+      "doc": "us_constitution",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        37,
+        40,
+        36
+      ],
+      "answer": "The Congress shall have power to declare the punishment of Treason, but no Attainder of Treason shall work New States may be admitted by the Congress into this Union;",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-09",
+      "doc": "us_constitution",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 0.5,
+      "retrieved": [
+        37,
+        17,
+        24
+      ],
+      "answer": "The Congress shall have power to declare the punishment of Treason, but no Attainder of Treason shall work To declare War, grant Letters of Marque and Reprisal, and make Rules concerning Captures on Land and",
+      "faithfulness": 5.0,
+      "relevance": 5.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-10",
+      "doc": "us_constitution",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        20,
+        45,
+        9
+      ],
+      "answer": "The Privilege of the Writ of Habeas Corpus shall not be suspended, unless when in Cases of Rebellion or Office or public Trust under the United States",
+      "faithfulness": 5.0,
+      "relevance": 2.71,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-11",
+      "doc": "us_constitution",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        6,
+        14,
+        26
+      ],
+      "answer": "The Vice-President of the United States shall be President of the Senate, but shall have no Vote, unless they be The Senate shall choose their other Officers, and also a President pro tempore, in the Absence of the",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-12",
+      "doc": "us_constitution",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        30,
+        17,
+        27
+      ],
+      "answer": "The President shall be Commander in Chief of the Army and Navy of the United States, and of the To provide and maintain a Navy;",
+      "faithfulness": 5.0,
+      "relevance": 3.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-13",
+      "doc": "us_constitution",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        44,
+        35,
+        3
+      ],
+      "answer": "This Constitution, and the Laws of the United States which shall be made in Pursuance thereof; Laws of the United States, and Treaties made, or which shall be made, under their Authority;--to all Cases",
+      "faithfulness": 5.0,
+      "relevance": 1.33,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-14",
+      "doc": "us_constitution",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        37,
+        45,
+        33
+      ],
+      "answer": "Treason against the United States, shall consist only in levying War against them, or in adhering to No Person shall be convicted of Treason unless on the Testimony",
+      "faithfulness": 5.0,
+      "relevance": 2.33,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-15",
+      "doc": "us_constitution",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        4,
+        28,
+        0
+      ],
+      "answer": "Constitution, shall be eligible to the Office of President; THE CONSTITUTION OF THE UNITED STATES OF AMERICA, 1787",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-16",
+      "doc": "us_constitution",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        44,
+        29,
+        15
+      ],
+      "answer": "against the United States under this Constitution, as under the Confederation. This Constitution, and the Laws of the United States which shall be made in Pursuance thereof;",
+      "faithfulness": 5.0,
+      "relevance": 3.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-01",
+      "doc": "declaration_of_independence",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 0.5,
+      "retrieved": [
+        1,
+        0,
+        4
+      ],
+      "answer": "these rights, Governments are instituted among Men, deriving their just powers from the consent of the with certain unalienable Rights, that among these are Life, Liberty, and the pursuit of Happiness.",
+      "faithfulness": 5.0,
+      "relevance": 5.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-02",
+      "doc": "declaration_of_independence",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        1,
+        0,
+        4
+      ],
+      "answer": "these rights, Governments are instituted among Men, deriving their just powers from the consent of the organizing its powers in such form, as to them shall seem most likely to effect their Safety and Happiness.",
+      "faithfulness": 5.0,
+      "relevance": 3.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-03",
+      "doc": "declaration_of_independence",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        1,
+        10,
+        0
+      ],
+      "answer": "governed, That whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it, and to institute new Government, laying its foundation on such principles and",
+      "faithfulness": 5.0,
+      "relevance": 5.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-04",
+      "doc": "declaration_of_independence",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        10,
+        3,
+        2
+      ],
+      "answer": "good People of these Colonies, solemnly publish and declare, That these United Colonies are, and of Right --Such has been the patient sufferance of these Colonies;",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-05",
+      "doc": "declaration_of_independence",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        6,
+        10,
+        4
+      ],
+      "answer": "For protecting them, by a mock Trial, from Punishment for any Murders which they should commit on the For depriving us, in many cases, of the benefits of Trial by Jury:",
+      "faithfulness": 5.0,
+      "relevance": 2.45,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-06",
+      "doc": "declaration_of_independence",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        11,
+        3,
+        0
+      ],
+      "answer": "establish Commerce, and to do all other Acts and Things which Independent States may of right do. each other our Lives, our Fortunes and our sacred Honor.",
+      "faithfulness": 5.0,
+      "relevance": 5.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-07",
+      "doc": "declaration_of_independence",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 0.5,
+      "retrieved": [
+        10,
+        11,
+        0
+      ],
+      "answer": "ought to be Free and Independent States; that as Free and Independent States, they have full Power to levy War, conclude Peace, contract Alliances,",
+      "faithfulness": 5.0,
+      "relevance": 4.08,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-01",
+      "doc": "elements_of_style",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        6,
+        46,
+        32
+      ],
+      "answer": "reason, stated in two forms. 5 The same reason, stated in still",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-02",
+      "doc": "elements_of_style",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        4,
+        87,
+        80
+      ],
+      "answer": "Form the possessive singular of nouns by adding 's. Exceptions are the possessive of ancient proper names in -es and -is, the possessive Jesus', and such forms as",
+      "faithfulness": 5.0,
+      "relevance": 2.14,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-03",
+      "doc": "elements_of_style",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        4,
+        61,
+        99
+      ],
+      "answer": "Form the possessive singular of nouns by adding 's. Exceptions are the possessive of ancient proper names in -es and -is, the possessive Jesus', and such forms as",
+      "faithfulness": 5.0,
+      "relevance": 2.56,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-04",
+      "doc": "elements_of_style",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        15,
+        13,
+        16
+      ],
+      "answer": "while (in the sense of and at the same time) likewise require a comma before the conjunction. If the second member is introduced by an adverb, a semicolon, not a comma, is required (see Rule 5).",
+      "faithfulness": 5.0,
+      "relevance": 1.47,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-05",
+      "doc": "elements_of_style",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        16,
+        18,
+        17
+      ],
+      "answer": "Do not join independent clauses by a comma. If two or more clauses, grammatically complete and not joined by a conjunction, are to form a single compound",
+      "faithfulness": 5.0,
+      "relevance": 3.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-06",
+      "doc": "elements_of_style",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        21,
+        22,
+        51
+      ],
+      "answer": "On arriving in Chicago, his friends met him at the station. When he arrived (or, On his arrival) in Chicago, his friends met him",
+      "faithfulness": 5.0,
+      "relevance": 1.36,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-07",
+      "doc": "elements_of_style",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 0.5,
+      "retrieved": [
+        29,
+        28,
+        36
+      ],
+      "answer": "the same reason) in the topic sentence. As a rule, begin each paragraph with a topic sentence, end it in conformity with the beginning.",
+      "faithfulness": 5.0,
+      "relevance": 1.67,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-08",
+      "doc": "elements_of_style",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 0.5,
+      "retrieved": [
+        41,
+        37,
+        40
+      ],
+      "answer": "Use the active voice. The active voice is usually more direct and vigorous than the passive:",
+      "faithfulness": 5.0,
+      "relevance": 4.33,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-09",
+      "doc": "elements_of_style",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        42,
+        43,
+        60
+      ],
+      "answer": "Put statements in positive form. even a negative in positive form.",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-10",
+      "doc": "elements_of_style",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        49,
+        52,
+        51
+      ],
+      "answer": "Omit needless words. A sentence should contain no unnecessary words, a paragraph no unnecessary",
+      "faithfulness": 5.0,
+      "relevance": 1.8,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-11",
+      "doc": "elements_of_style",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        67,
+        22,
+        13
+      ],
+      "answer": "But whichever tense be used in the summary, a past tense in indirect discourse or in indirect question remains Apart from the exceptions noted, whichever tense the writer chooses, he should use throughout.",
+      "faithfulness": 5.0,
+      "relevance": 2.33,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-12",
+      "doc": "elements_of_style",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        52,
+        82,
+        73
+      ],
+      "answer": "There were several less important courses, but these were the most These, the most important courses of all, came, if not daily, at",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-13",
+      "doc": "elements_of_style",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        65,
+        85,
+        94
+      ],
+      "answer": "To compare to is to point out or imply resemblances, between objects regarded as essentially of to compare with is mainly to point out differences, between objects regarded as essentially of the",
+      "faithfulness": 5.0,
+      "relevance": 1.4,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-14",
+      "doc": "elements_of_style",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        64,
+        70,
+        39
+      ],
+      "answer": "Modifiers should come, if possible, next to the word they modify. If several expressions modify the same word,",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-15",
+      "doc": "elements_of_style",
+      "strategy": "heading",
+      "k": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        36,
+        28,
+        21
+      ],
+      "answer": "The brief paragraphs of animated narrative, however, are often without even this semblance of a topic sentence. As a rule, begin each paragraph with a topic sentence, end it in conformity with the beginning.",
+      "faithfulness": 5.0,
+      "relevance": 1.57,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-01",
+      "doc": "us_constitution",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        13,
+        15,
+        14,
+        26,
+        1
+      ],
+      "answer": "All Bills for raising Revenue shall originate in the House of Representatives; Every Bill which shall have passed the House of Representatives and the Senate, shall, before it become a Law,",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-02",
+      "doc": "us_constitution",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        5,
+        8,
+        3,
+        2,
+        38
+      ],
+      "answer": "The Senate of the United States shall be composed of two Senators from each State, chosen by the prescribed in each State by the Legislature thereof;",
+      "faithfulness": 5.0,
+      "relevance": 2.45,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-03",
+      "doc": "us_constitution",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 0.3333333333333333,
+      "reciprocal_rank": 0.3333333333333333,
+      "retrieved": [
+        31,
+        25,
+        6,
+        39,
+        27
+      ],
+      "answer": "proper, in the President alone, in the Courts of Law, or in the Heads of Departments. Senator or Representative, or Person holding an Office of Trust or Profit under the United States, shall be",
+      "faithfulness": 5.0,
+      "relevance": 3.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-04",
+      "doc": "us_constitution",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        42,
+        28,
+        7,
+        10,
+        24
+      ],
+      "answer": "The Congress, whenever two thirds of both Houses shall deem it necessary, shall propose Amendments to this fourths thereof, as the one or the other Mode of Ratification may be proposed by the Congress;",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-05",
+      "doc": "us_constitution",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        5,
+        26,
+        42,
+        29,
+        25
+      ],
+      "answer": "and each Senator shall have one Vote. Government of the United States, directed to the President of the Senate.",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-06",
+      "doc": "us_constitution",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        13,
+        35,
+        39,
+        27,
+        2
+      ],
+      "answer": "All Bills for raising Revenue shall originate in the House of Representatives; propose or concur with Amendments as on other Bills.",
+      "faithfulness": 5.0,
+      "relevance": 3.86,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-07",
+      "doc": "us_constitution",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        14,
+        10,
+        33,
+        29,
+        28
+      ],
+      "answer": "If any Bill shall not be returned by the President within ten Days (Sundays excepted) after it shall have been presented to him, the Same shall be a Law, in like",
+      "faithfulness": 5.0,
+      "relevance": 1.4,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-08",
+      "doc": "us_constitution",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        37,
+        40,
+        36,
+        27,
+        28
+      ],
+      "answer": "The Congress shall have power to declare the punishment of Treason, but no Attainder of Treason shall work New States may be admitted by the Congress into this Union;",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-09",
+      "doc": "us_constitution",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 0.5,
+      "retrieved": [
+        37,
+        17,
+        24,
+        30,
+        4
+      ],
+      "answer": "The Congress shall have power to declare the punishment of Treason, but no Attainder of Treason shall work To declare War, grant Letters of Marque and Reprisal, and make Rules concerning Captures on Land and",
+      "faithfulness": 5.0,
+      "relevance": 5.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-10",
+      "doc": "us_constitution",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        20,
+        45,
+        9,
+        44,
+        35
+      ],
+      "answer": "The Privilege of the Writ of Habeas Corpus shall not be suspended, unless when in Cases of Rebellion or Office or public Trust under the United States",
+      "faithfulness": 5.0,
+      "relevance": 2.71,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-11",
+      "doc": "us_constitution",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 0.2,
+      "retrieved": [
+        6,
+        14,
+        26,
+        31,
+        28
+      ],
+      "answer": "The Vice-President of the United States shall be President of the Senate, but shall have no Vote, unless they be Constitution, shall be eligible to the Office of President;",
+      "faithfulness": 5.0,
+      "relevance": 1.31,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-12",
+      "doc": "us_constitution",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        30,
+        17,
+        27,
+        20,
+        0
+      ],
+      "answer": "The President shall be Commander in Chief of the Army and Navy of the United States, and of the To provide and maintain a Navy;",
+      "faithfulness": 5.0,
+      "relevance": 3.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-13",
+      "doc": "us_constitution",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 0.2,
+      "retrieved": [
+        44,
+        35,
+        3,
+        32,
+        30
+      ],
+      "answer": "This Constitution, and the Laws of the United States which shall be made in Pursuance thereof; Laws of the United States, and Treaties made, or which shall be made, under their Authority;--to all Cases",
+      "faithfulness": 5.0,
+      "relevance": 1.33,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-14",
+      "doc": "us_constitution",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        37,
+        45,
+        33,
+        34,
+        8
+      ],
+      "answer": "Treason against the United States, shall consist only in levying War against them, or in adhering to No Person shall be convicted of Treason unless on the Testimony",
+      "faithfulness": 5.0,
+      "relevance": 2.33,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-15",
+      "doc": "us_constitution",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        4,
+        28,
+        0,
+        44,
+        45
+      ],
+      "answer": "Constitution, shall be eligible to the Office of President; THE CONSTITUTION OF THE UNITED STATES OF AMERICA, 1787",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "con-16",
+      "doc": "us_constitution",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        44,
+        29,
+        15,
+        19,
+        0
+      ],
+      "answer": "against the United States under this Constitution, as under the Confederation. This Constitution, and the Laws of the United States which shall be made in Pursuance thereof;",
+      "faithfulness": 5.0,
+      "relevance": 3.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-01",
+      "doc": "declaration_of_independence",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 0.5,
+      "retrieved": [
+        1,
+        0,
+        4,
+        9,
+        6
+      ],
+      "answer": "these rights, Governments are instituted among Men, deriving their just powers from the consent of the with certain unalienable Rights, that among these are Life, Liberty, and the pursuit of Happiness.",
+      "faithfulness": 5.0,
+      "relevance": 5.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-02",
+      "doc": "declaration_of_independence",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        1,
+        0,
+        4,
+        9,
+        5
+      ],
+      "answer": "these rights, Governments are instituted among Men, deriving their just powers from the consent of the organizing its powers in such form, as to them shall seem most likely to effect their Safety and Happiness.",
+      "faithfulness": 5.0,
+      "relevance": 3.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-03",
+      "doc": "declaration_of_independence",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        1,
+        10,
+        0,
+        4,
+        9
+      ],
+      "answer": "governed, That whenever any Form of Government becomes destructive of these ends, it is the Right of the People to alter or to abolish it, and to institute new Government, laying its foundation on such principles and",
+      "faithfulness": 5.0,
+      "relevance": 5.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-04",
+      "doc": "declaration_of_independence",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        10,
+        3,
+        2,
+        11,
+        0
+      ],
+      "answer": "good People of these Colonies, solemnly publish and declare, That these United Colonies are, and of Right --Such has been the patient sufferance of these Colonies;",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-05",
+      "doc": "declaration_of_independence",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        6,
+        10,
+        4,
+        7,
+        8
+      ],
+      "answer": "For protecting them, by a mock Trial, from Punishment for any Murders which they should commit on the For depriving us, in many cases, of the benefits of Trial by Jury:",
+      "faithfulness": 5.0,
+      "relevance": 2.45,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-06",
+      "doc": "declaration_of_independence",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        11,
+        3,
+        0,
+        2,
+        4
+      ],
+      "answer": "establish Commerce, and to do all other Acts and Things which Independent States may of right do. each other our Lives, our Fortunes and our sacred Honor.",
+      "faithfulness": 5.0,
+      "relevance": 5.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "dec-07",
+      "doc": "declaration_of_independence",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 0.5,
+      "retrieved": [
+        10,
+        11,
+        0,
+        5,
+        6
+      ],
+      "answer": "ought to be Free and Independent States; that as Free and Independent States, they have full Power to levy War, conclude Peace, contract Alliances,",
+      "faithfulness": 5.0,
+      "relevance": 4.08,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-01",
+      "doc": "elements_of_style",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        6,
+        46,
+        32,
+        38,
+        61
+      ],
+      "answer": "reason, stated in two forms. 5 The same reason, stated in still",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-02",
+      "doc": "elements_of_style",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        4,
+        87,
+        80,
+        99,
+        96
+      ],
+      "answer": "Form the possessive singular of nouns by adding 's. Exceptions are the possessive of ancient proper names in -es and -is, the possessive Jesus', and such forms as",
+      "faithfulness": 5.0,
+      "relevance": 2.14,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-03",
+      "doc": "elements_of_style",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        4,
+        61,
+        99,
+        67,
+        80
+      ],
+      "answer": "Form the possessive singular of nouns by adding 's. Exceptions are the possessive of ancient proper names in -es and -is, the possessive Jesus', and such forms as",
+      "faithfulness": 5.0,
+      "relevance": 2.56,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-04",
+      "doc": "elements_of_style",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 0.25,
+      "retrieved": [
+        15,
+        13,
+        16,
+        5,
+        51
+      ],
+      "answer": "while (in the sense of and at the same time) likewise require a comma before the conjunction. In a series of three or more terms with a single conjunction, use a comma after each term except the last.",
+      "faithfulness": 5.0,
+      "relevance": 4.06,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-05",
+      "doc": "elements_of_style",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        16,
+        18,
+        17,
+        11,
+        9
+      ],
+      "answer": "Do not join independent clauses by a comma. If two or more clauses, grammatically complete and not joined by a conjunction, are to form a single compound",
+      "faithfulness": 5.0,
+      "relevance": 3.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-06",
+      "doc": "elements_of_style",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        21,
+        22,
+        51,
+        40,
+        41
+      ],
+      "answer": "On arriving in Chicago, his friends met him at the station. When he arrived (or, On his arrival) in Chicago, his friends met him",
+      "faithfulness": 5.0,
+      "relevance": 1.36,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-07",
+      "doc": "elements_of_style",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 0.5,
+      "retrieved": [
+        29,
+        28,
+        36,
+        34,
+        32
+      ],
+      "answer": "the same reason) in the topic sentence. As a rule, begin each paragraph with a topic sentence, end it in conformity with the beginning.",
+      "faithfulness": 5.0,
+      "relevance": 1.67,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-08",
+      "doc": "elements_of_style",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 0.5,
+      "retrieved": [
+        41,
+        37,
+        40,
+        38,
+        39
+      ],
+      "answer": "Use the active voice. The active voice is usually more direct and vigorous than the passive:",
+      "faithfulness": 5.0,
+      "relevance": 4.33,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-09",
+      "doc": "elements_of_style",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        42,
+        43,
+        60,
+        57,
+        102
+      ],
+      "answer": "Put statements in positive form. even a negative in positive form.",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-10",
+      "doc": "elements_of_style",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "retrieved": [
+        49,
+        52,
+        51,
+        74,
+        50
+      ],
+      "answer": "Omit needless words. A sentence should contain no unnecessary words, a paragraph no unnecessary",
+      "faithfulness": 5.0,
+      "relevance": 1.8,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-11",
+      "doc": "elements_of_style",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 0.25,
+      "retrieved": [
+        67,
+        22,
+        13,
+        66,
+        18
+      ],
+      "answer": "But whichever tense be used in the summary, a past tense in indirect discourse or in indirect question remains In summarizing the action of a drama, the writer should always use the present tense.",
+      "faithfulness": 5.0,
+      "relevance": 5.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-12",
+      "doc": "elements_of_style",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 0.25,
+      "retrieved": [
+        52,
+        82,
+        73,
+        70,
+        72
+      ],
+      "answer": "There were several less important courses, but these were the most The proper place in the sentence for the word, or group of words, which the writer desires to make most",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-13",
+      "doc": "elements_of_style",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.2,
+      "recall": 1.0,
+      "reciprocal_rank": 0.2,
+      "retrieved": [
+        65,
+        85,
+        94,
+        52,
+        74
+      ],
+      "answer": "To compare to is to point out or imply resemblances, between objects regarded as essentially of Do not spell out dates or other serial numbers.",
+      "faithfulness": 5.0,
+      "relevance": 3.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-14",
+      "doc": "elements_of_style",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        64,
+        70,
+        39,
+        88,
+        38
+      ],
+      "answer": "Modifiers should come, if possible, next to the word they modify. If several expressions modify the same word,",
+      "faithfulness": 5.0,
+      "relevance": 1.0,
+      "judge_reasoning": ""
+    },
+    {
+      "id": "eos-15",
+      "doc": "elements_of_style",
+      "strategy": "heading",
+      "k": 5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "reciprocal_rank": 0.0,
+      "retrieved": [
+        36,
+        28,
+        21,
+        29,
+        73
+      ],
+      "answer": "The brief paragraphs of animated narrative, however, are often without even this semblance of a topic sentence. As a rule, begin each paragraph with a topic sentence, end it in conformity with the beginning.",
+      "faithfulness": 5.0,
+      "relevance": 1.57,
+      "judge_reasoning": ""
+    }
+  ]
+}

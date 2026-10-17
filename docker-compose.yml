@@ -1,0 +1,43 @@
+# Local stack: the API plus Postgres with pgvector.
+#
+#   docker compose up --build
+#
+# Runs offline by default (hash embeddings, extractive answers). To use real
+# models, set EMBEDDING_PROVIDER=openai, LLM_PROVIDER=anthropic and the API keys
+# in .env; compose reads it for both substitution and the container environment.
+services:
+  db:
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_USER: rag
+      POSTGRES_PASSWORD: rag
+      POSTGRES_DB: rag
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U rag -d rag"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+
+  api:
+    build: .
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      VECTOR_STORE: pgvector
+      DATABASE_URL: postgresql://rag:rag@db:5432/rag
+      EMBEDDING_PROVIDER: ${EMBEDDING_PROVIDER:-hash}
+      LLM_PROVIDER: ${LLM_PROVIDER:-mock}
+      LOG_JSON: "true"
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  pgdata:
