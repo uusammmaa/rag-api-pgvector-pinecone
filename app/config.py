@@ -59,7 +59,7 @@ class Settings(BaseSettings):
     embedding_provider: Literal["openai", "hash"] = "openai"
     embedding_model: str = "text-embedding-3-small"
     embedding_dim: int = Field(default=1536, ge=8, le=4096)
-    chunk_strategy: ChunkStrategy = "heading"
+    chunk_strategy: ChunkStrategy = "recursive"
     chunk_size: int = Field(default=800, ge=100, le=8000)
     chunk_overlap: int = Field(default=100, ge=0, le=2000)
     top_k: int = Field(default=5, ge=1, le=50)

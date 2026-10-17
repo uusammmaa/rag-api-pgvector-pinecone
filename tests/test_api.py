@@ -78,7 +78,7 @@ def test_upload_pdf(client: TestClient, sample_pdf: bytes) -> None:
     assert body["chunks"] >= 2
     assert body["pages"] == 1
     assert body["vector_store"] == "memory"
-    assert body["chunk_strategy"] == "heading"
+    assert body["chunk_strategy"] == "recursive"
 
 
 def test_upload_accepts_octet_stream_when_bytes_are_pdf(client: TestClient, sample_pdf: bytes):
